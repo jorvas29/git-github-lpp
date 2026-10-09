@@ -1,0 +1,52 @@
+entero opcion, num1, num2, resultado
+real numero, cuadrado
+cadena [25] nombre
+
+inicio
+
+opcion <- 0
+Mientras opcion <> 4 Haga
+llamar nueva_linea
+llamar nueva_linea
+escriba	"========MENU PRINCIPAL========"
+llamar nueva_linea
+escriba	"1. sumar dos numeros"
+llamar nueva_linea
+escriba	"2. Calcular el cuadrado de un numero"
+llamar nueva_linea
+escriba	"3. Saludar por Nombre"
+llamar nueva_linea
+escriba "4. Salir"
+
+llamar nueva_linea
+
+escriba	"Seleccione una opcion: "
+lea	opcion
+
+caso opcion
+1:	escriba	"Ingrese el primer numero :"
+	lea num1
+	escriba	"Ingrese el segundo numero :"
+	lea num2
+	resultado <- num1+num2
+	escriba	"La suma es :"
+	escriba resultado
+	
+2:	escriba "Ingrese Un numero :"
+	lea	numero
+	cuadrado <- numero * numero
+	escriba " El cuadrado es :"
+	escriba	cuadrado
+	
+3:	escriba "Cual es su Nombre : "
+	lea nombre
+	escriba	"Hola, Bienvenido  "
+	escriba nombre
+	
+4:	escriba "Hasta pronto...."
+
+sino:	escriba "Opcion Invalida, Intente de nuevo..."
+fin caso
+Fin Mientras
+
+fin
