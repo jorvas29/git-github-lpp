@@ -1,0 +1,46 @@
+[1mdiff --git a/git-github.lpp b/git-github.lpp[m
+[1mindex a565836..80216b3 100644[m
+[1m--- a/git-github.lpp[m
+[1m+++ b/git-github.lpp[m
+[36m@@ -1,5 +1,5 @@[m
+ entero opcion, num1, num2, resultado[m
+[31m-real numero, cuadrado, radio, area, pi[m
+[32m+[m[32mreal numero, cuadrado, radio, area, pi,celsius, fahrenheit[m
+ cadena [25] nombre[m
+ [m
+ inicio[m
+[36m@@ -7,7 +7,7 @@[m [mpi <- 3.1416[m
+ [m
+ opcion <- 0[m
+ [m
+[31m-Mientras opcion <> 5 Haga[m
+[32m+[m[32mMientras opcion <> 6 Haga[m
+ llamar nueva_linea[m
+ llamar nueva_linea[m
+ escriba	"========MENU PRINCIPAL========"[m
+[36m@@ -20,7 +20,9 @@[m [mescriba	"3. Saludar por Nombre"[m
+ llamar nueva_linea[m
+ Escriba "4. Calcular el area de un circulo"[m
+ llamar nueva_linea[m
+[31m-escriba "5. Salir"[m
+[32m+[m[32mEscriba "5. Convertir Celsius a Fahrenheit"[m
+[32m+[m[32mllamar nueva_linea[m
+[32m+[m[32mEscriba "6. Salir"[m
+ [m
+ llamar nueva_linea[m
+ [m
+[36m@@ -55,7 +57,13 @@[m [mcaso opcion[m
+    Escriba area[m
+ [m
+ 	[m
+[31m-5:	escriba "Hasta pronto...."[m
+[32m+[m[32m5: Escriba "Ingrese la temperatura en Celsius: "[m
+[32m+[m[32m   Lea celsius[m
+[32m+[m[32m   fahrenheit <- (celsius * 9 / 5) + 32[m
+[32m+[m[32m   Escriba "En Fahrenheit es: "[m
+[32m+[m[32m   Escriba fahrenheit[m
+[32m+[m[32m6: Escriba "Hasta pronto"[m
+[32m+[m
+ [m
+ sino:	escriba "Opcion Invalida, Intente de nuevo..."[m
+ fin caso[m

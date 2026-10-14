@@ -1,5 +1,5 @@
 entero opcion, num1, num2, resultado
-real numero, cuadrado, radio, area, pi
+real numero, cuadrado, radio, area, pi,celsius, fahrenheit
 cadena [25] nombre
 
 inicio
@@ -7,7 +7,7 @@ pi <- 3.1416
 
 opcion <- 0
 
-Mientras opcion <> 5 Haga
+Mientras opcion <> 6 Haga
 llamar nueva_linea
 llamar nueva_linea
 escriba	"========MENU PRINCIPAL========"
@@ -20,7 +20,9 @@ escriba	"3. Saludar por Nombre"
 llamar nueva_linea
 Escriba "4. Calcular el area de un circulo"
 llamar nueva_linea
-escriba "5. Salir"
+Escriba "5. Convertir Celsius a Fahrenheit"
+llamar nueva_linea
+Escriba "6. Salir"
 
 llamar nueva_linea
 
@@ -55,7 +57,13 @@ caso opcion
    Escriba area
 
 	
-5:	escriba "Hasta pronto...."
+5: Escriba "Ingrese la temperatura en Celsius: "
+   Lea celsius
+   fahrenheit <- (celsius * 9 / 5) + 32
+   Escriba "En Fahrenheit es: "
+   Escriba fahrenheit
+6: Escriba "Hasta pronto"
+
 
 sino:	escriba "Opcion Invalida, Intente de nuevo..."
 fin caso
