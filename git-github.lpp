@@ -1,11 +1,13 @@
 entero opcion, num1, num2, resultado
-real numero, cuadrado
+real numero, cuadrado, radio, area, pi
 cadena [25] nombre
 
 inicio
+pi <- 3.1416
 
 opcion <- 0
-Mientras opcion <> 4 Haga
+
+Mientras opcion <> 5 Haga
 llamar nueva_linea
 llamar nueva_linea
 escriba	"========MENU PRINCIPAL========"
@@ -16,12 +18,15 @@ escriba	"2. Calcular el cuadrado de un numero"
 llamar nueva_linea
 escriba	"3. Saludar por Nombre"
 llamar nueva_linea
-escriba "4. Salir"
+Escriba "4. Calcular el area de un circulo"
+llamar nueva_linea
+escriba "5. Salir"
 
 llamar nueva_linea
 
 escriba	"Seleccione una opcion: "
 lea	opcion
+llamar nueva_linea
 
 caso opcion
 1:	escriba	"Ingrese el primer numero :"
@@ -43,7 +48,14 @@ caso opcion
 	escriba	"Hola, Bienvenido  "
 	escriba nombre
 	
-4:	escriba "Hasta pronto...."
+4: Escriba "Ingrese el radio del circulo: "
+   Lea radio
+   area <- pi * radio * radio
+   Escriba "El area es: "
+   Escriba area
+
+	
+5:	escriba "Hasta pronto...."
 
 sino:	escriba "Opcion Invalida, Intente de nuevo..."
 fin caso
