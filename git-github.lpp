@@ -62,7 +62,8 @@ caso opcion
    fahrenheit <- (celsius * 9 / 5) + 32
    Escriba "En Fahrenheit es: "
    Escriba fahrenheit
-6: Escriba "Hasta pronto"
+6: Escriba "Gracias por usar menu-lpp"
+
 
 
 sino:	escriba "Opcion Invalida, Intente de nuevo..."
