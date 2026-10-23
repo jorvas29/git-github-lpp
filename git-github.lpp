@@ -68,5 +68,6 @@ caso opcion
 sino:	escriba "Opcion Invalida, Intente de nuevo..."
 fin caso
 Fin Mientras
-
+llamar nueva_linea
+Escriba "Desarrollado en ADSO - SENA"
 fin
